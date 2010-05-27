@@ -5,15 +5,15 @@ then
 fi
 
 echo "Cloning Oh My Zsh..."
-/usr/bin/env git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+/usr/bin/env git clone git://github.com/jtaby/oh-my-zsh.git ~/.oh-my-zsh
 
-echo "Looking for an existing zsh config..."
-if [ -f ~/.zshrc ] || [ -h ~/.zshrc ]
-then
-  echo "Found ~/.zshrc. Backing up to ~/.zshrc.pre-oh-my-zsh";
-  cp ~/.zshrc ~/.zshrc.pre-oh-my-zsh;
-  rm ~/.zshrc;
-fi
+# echo "Looking for an existing zsh config..."
+# if [ -f ~/.zshrc ] || [ -h ~/.zshrc ]
+# then
+#   echo "Found ~/.zshrc. Backing up to ~/.zshrc.pre-oh-my-zsh";
+#   cp ~/.zshrc ~/.zshrc.pre-oh-my-zsh;
+#   rm ~/.zshrc;
+# fi
 
 echo "Using the Oh My Zsh template file and adding it to ~/.zshrc"
 cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
