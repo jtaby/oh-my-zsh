@@ -18,7 +18,7 @@ function virtualenv_info {
 local return_code="%(?..%{$fg[red]%}%? ↵%{$reset_color%})"
 
 PROMPT='
-%{$fg[blue]%}%n%{$reset_color%} in %{$fg_bold[green]%}$(collapse_pwd)%{$reset_color%}$(git_prompt_info) $(virtualenv_info)$(prompt_char) '
+%{$fg[yellow]%}%n%{$reset_color%} on %{$fg[yellow]%}%M%{$reset_color%} in %{$fg_bold[green]%}$(collapse_pwd)%{$reset_color%}$(git_prompt_info) $(virtualenv_info)$(prompt_char) '
 
 RPROMPT='$(battery_charge)'
 
