@@ -32,3 +32,8 @@ alias ggpull='git pull origin $(current_branch)'
 alias ggpush='git push origin $(current_branch)'
 alias ggrebase='git rebase origin/$(current_branch)'
 alias ggpnp='git pull origin $(current_branch) && git push origin $(current_branch)'
+
+alias gr='git rebase'
+alias grcontinue='git rebase --continue'
+alias grabort='git rebase --abort'
+alias grskip='git rebase --skip'
