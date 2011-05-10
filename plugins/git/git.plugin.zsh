@@ -47,6 +47,7 @@ compdef ggpull=git
 alias ggpush='git push origin $(current_branch)'
 compdef ggpush=git
 alias ggrebase='git rebase origin/$(current_branch)'
+alias ggl='gl origin/$(current_branch)'
 alias ggpnp='git pull origin $(current_branch) && git push origin $(current_branch)'
 compdef ggpnp=git
 
